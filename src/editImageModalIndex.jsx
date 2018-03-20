@@ -11,6 +11,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import EditImageModal from './components/EditImageModal';
+import edxBootstrap from './SFE.scss';
 /* eslint-enable import/first */
 
 const App = () => (
