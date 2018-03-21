@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, CheckBox, InputText, Modal } from '@edx/paragon';
 
 import edxBootstrap from '../../SFE.scss';
+import './EditImageModal.scss';
 
 const placeHolderImageSource = 'https://images.pexels.com/photos/39803/pexels-photo-39803.jpeg?w=940&h=650&auto=compress&cs=tinysrgb';
 
@@ -172,7 +173,7 @@ export default class EditImageModal extends React.Component {
         />
       </div>
       <div className={edxBootstrap.col}>
-        <form onSubmit={this.onFormSubmit} ref={(input) => { this.formRef = input; }}>
+        <form ref={(input) => { this.formRef = input; }}>
           {this.getImageSourceInput()}
           {this.getImageDescriptionInput()}
           {this.getImageDimensionsInput()}
