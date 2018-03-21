@@ -9,3 +9,11 @@
   &.fade { opacity: 0; }
   &.show { opacity: 1; }
 }
+
+fieldset legend {
+  width: inherit;
+}
+
+img {
+  max-width: 100%;
+}
